@@ -1,0 +1,46 @@
+.main-container {
+    padding-top: 100px;
+}
+
+.button-width {
+    min-width: 200px;
+}
+
+.button-padding{
+    padding: 50px;
+}
+
+.btn-padding-rightprod{
+   
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.btn-padding-right{
+   
+    margin-right: 25px;
+    margin-left: 50px;
+}
+
+.logo{
+    width: 20px;
+    height: 20px;
+}
+
+.loader-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.loader-coins {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+}
