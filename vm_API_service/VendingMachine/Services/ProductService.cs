@@ -16,10 +16,10 @@ namespace VendingMachine.Services
         private static readonly int[] productPrice = new int[] { 10, 10, 10, 10, 10, 10, 8, 5, 5, 10 };
         private static readonly string[] productVolume = new string[] { "330ml", "330ml", "330ml", "500ml", "330ml", "500ml", "330ml", "33g", "33g", "500ml" };
 
+       // private static readonly Array[] arrays = new Array[] { productName, productQuant };
+
         static ProductService()
         {
-      
-            var currency = "R";
             for (int i = 0; i < 10; i++)
             {
                 Product product = new Product

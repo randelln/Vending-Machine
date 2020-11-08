@@ -1,0 +1,268 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomeView should render the HomeView without issues 1`] = `
+<div
+  className="main-container container"
+  style={
+    Object {
+      "paddingTop": "10px",
+    }
+  }
+>
+  <Row
+    tag="div"
+    widths={
+      Array [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+      ]
+    }
+  >
+    <Col
+      tag="div"
+      widths={
+        Array [
+          "xs",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+        ]
+      }
+    >
+      <h3>
+        Vending Machine
+      </h3>
+    </Col>
+    <Col
+      tag="div"
+      widths={
+        Array [
+          "xs",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+        ]
+      }
+    >
+      <h3>
+        Balance: R
+        10
+      </h3>
+    </Col>
+  </Row>
+  <Row
+    tag="div"
+    widths={
+      Array [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+      ]
+    }
+  >
+    <Col
+      tag="div"
+      widths={
+        Array [
+          "xs",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+        ]
+      }
+    >
+      <DataTable
+        fetchCoins={[MockFunction]}
+        fetchProducts={[MockFunction]}
+        loadingProducts={false}
+        products={
+          Array [
+            Object {
+              "id": 1,
+              "name": "Coke",
+              "price": 10,
+              "quantity": 10,
+            },
+            Object {
+              "id": 2,
+              "name": "Fanta",
+              "price": 10,
+              "quantity": 2,
+            },
+            Object {
+              "id": 3,
+              "name": "Sprite",
+              "price": 10,
+              "quantity": 3,
+            },
+            Object {
+              "id": 4,
+              "name": "Lemon Twist",
+              "price": 10,
+              "quantity": 9,
+            },
+            Object {
+              "id": 5,
+              "name": "Tab",
+              "price": 10,
+              "quantity": 5,
+            },
+            Object {
+              "id": 6,
+              "name": "Pepsi",
+              "price": 10,
+              "quantity": 8,
+            },
+            Object {
+              "id": 7,
+              "name": "KitKat",
+              "price": 8,
+              "quantity": 7,
+            },
+            Object {
+              "id": 8,
+              "name": "Lays",
+              "price": 5,
+              "quantity": 12,
+            },
+            Object {
+              "id": 9,
+              "name": "Simba",
+              "price": 5,
+              "quantity": 9,
+            },
+            Object {
+              "id": 10,
+              "name": "Energade",
+              "price": 10,
+              "quantity": 11,
+            },
+          ]
+        }
+        runningTotal={10}
+        setLoadingBuy={[MockFunction]}
+        setRunningTotal={[MockFunction]}
+      />
+    </Col>
+  </Row>
+  <tbody>
+    <tc
+      className="button-padding"
+      key="R1"
+    >
+      <Button
+        color="success"
+        disabled={false}
+        onClick={[Function]}
+        tag="button"
+      >
+        Insert 
+        R1
+         (
+        )
+        <br />
+      </Button>
+    </tc>
+    <tc
+      className="button-padding"
+      key="R2"
+    >
+      <Button
+        color="success"
+        disabled={false}
+        onClick={[Function]}
+        tag="button"
+      >
+        Insert 
+        R2
+         (
+        )
+        <br />
+      </Button>
+    </tc>
+    <tc
+      className="button-padding"
+      key="R5"
+    >
+      <Button
+        color="success"
+        disabled={false}
+        onClick={[Function]}
+        tag="button"
+      >
+        Insert 
+        R5
+         (
+        )
+        <br />
+      </Button>
+    </tc>
+    <tc
+      className="button-padding"
+      key="R10"
+    >
+      <Button
+        color="success"
+        disabled={false}
+        onClick={[Function]}
+        tag="button"
+      >
+        Insert 
+        R10
+         (
+        )
+        <br />
+      </Button>
+    </tc>
+  </tbody>
+  <br />
+  <tbody>
+    <tr>
+      <Button
+        className="btn-padding-right"
+        color="success"
+        id="ReloadProductsButton"
+        onClick={[MockFunction]}
+        tag="button"
+      >
+        Reload products
+      </Button>
+      <Button
+        className="btn-padding-right"
+        color="success"
+        id="ReloadCoinsButton"
+        onClick={[Function]}
+        tag="button"
+      >
+        Reload coins
+      </Button>
+      <Button
+        className="btn-padding-right"
+        color="success"
+        id="ReloadAll"
+        onClick={[MockFunction]}
+        tag="button"
+      >
+        Refresh All
+      </Button>
+      <Button
+        className="btn-padding-right"
+        color="danger"
+        id="CancelButton"
+        onClick={[Function]}
+        tag="button"
+      >
+        Cancel
+      </Button>
+    </tr>
+  </tbody>
+</div>
+`;

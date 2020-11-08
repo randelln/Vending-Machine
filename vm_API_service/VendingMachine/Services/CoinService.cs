@@ -28,8 +28,6 @@ namespace VendingMachine.Services
                 };
                 coins.Add(coin);
             }
-
-
         }
 
         public List<Coins> GetAll()

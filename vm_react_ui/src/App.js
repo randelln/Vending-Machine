@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import AppHeader from './components/AppHeader';
-import Home from './Pages/Home/HomeContianer';
+import Home from './Pages/Home/HomeContainer';
 import AppFooter from './components/AppFooter';
 
 

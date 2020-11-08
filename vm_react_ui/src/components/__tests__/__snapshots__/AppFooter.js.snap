@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppFooter should render the AppFooter without issues 1`] = `
+<Fragment>
+  <hr
+    className="featurette-divider"
+  />
+  <footer
+    className="navbar fixed-bottom"
+    style={
+      Object {
+        "padding": "0 50px",
+      }
+    }
+  >
+    <p>
+      © 2020 Randells Vending (PTY) LTD.
+    </p>
+  </footer>
+</Fragment>
+`;

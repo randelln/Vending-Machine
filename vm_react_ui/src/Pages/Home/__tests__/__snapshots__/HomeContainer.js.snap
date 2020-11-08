@@ -1,0 +1,137 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomeContainer should render the HomeContainer without issues 1`] = `
+<Container
+  className="main-container"
+  style={
+    Object {
+      "paddingTop": "10px",
+    }
+  }
+  tag="div"
+>
+  <Row
+    tag="div"
+    widths={
+      Array [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+      ]
+    }
+  >
+    <Col
+      tag="div"
+      widths={
+        Array [
+          "xs",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+        ]
+      }
+    >
+      <h3>
+        Vending Machine
+      </h3>
+    </Col>
+    <Col
+      tag="div"
+      widths={
+        Array [
+          "xs",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+        ]
+      }
+    >
+      <h3>
+        Balance: R
+        0
+      </h3>
+    </Col>
+  </Row>
+  <Row
+    tag="div"
+    widths={
+      Array [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+      ]
+    }
+  >
+    <Col
+      tag="div"
+      widths={
+        Array [
+          "xs",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+        ]
+      }
+    >
+      <DataTable
+        fetchCoins={[Function]}
+        fetchProducts={[Function]}
+        loadingProducts={false}
+        products={Array []}
+        runningTotal={0}
+        setLoadingBuy={[Function]}
+        setRunningTotal={[Function]}
+      />
+    </Col>
+  </Row>
+  <tbody />
+  <br />
+  <tbody>
+    <tr>
+      <Button
+        className="btn-padding-right"
+        color="success"
+        id="ReloadProductsButton"
+        onClick={[Function]}
+        tag="button"
+      >
+        Reload products
+      </Button>
+      <Button
+        className="btn-padding-right"
+        color="success"
+        id="ReloadCoinsButton"
+        onClick={[Function]}
+        tag="button"
+      >
+        Reload coins
+      </Button>
+      <Button
+        className="btn-padding-right"
+        color="success"
+        id="ReloadAll"
+        onClick={[Function]}
+        tag="button"
+      >
+        Refresh All
+      </Button>
+      <Button
+        className="btn-padding-right"
+        color="danger"
+        id="CancelButton"
+        onClick={[Function]}
+        tag="button"
+      >
+        Cancel
+      </Button>
+    </tr>
+  </tbody>
+</Container>
+`;
