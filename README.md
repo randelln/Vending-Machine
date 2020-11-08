@@ -17,6 +17,20 @@ React SPA that consumes an ASP.net Core Web API Service
 
 - Your API Service will now continue to run as long as the browser page is kept open.
 
+# Running React SPA
+
+- To run the React SPA, you will need to open up the "vm_react_ui" folder.
+
+![alt text](screenshots/ReactRoot.png "Home Page")
+
+- You will then run your command prompt as an administrator in this folder, and perform an npm install.
+
+![alt text](screenshots/NpmInstall.png "Home Page")
+
+- After successfully completed the npm install, you can now run the Web App, by running the "npm start" command in the terminal.
+
+![alt text](screenshots/NpmStart.png "Home Page")
+
 # Screenshots
 - When the WebApp opens, and the Service is up and running, you will see this home page.
 
