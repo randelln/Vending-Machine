@@ -10,7 +10,7 @@ React SPA that consumes an ASP.net Core Web API Service
 
 ![alt text](screenshots/AppOpen.png "Home Page")
 
-- You will need to click on insert coins, any of your choice, and you will see the balance avaialable for use of buying products go up. 
+- You will need to click on insert coins, any of your choice, and you will see the balance available for use of buying products go up. 
 
 ![alt text](screenshots/AppUseCoins.png "Use Coins")
 
