@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Randell Naidoo\\source\\repos\\VendingMachine\\VendingMachine\\VendingMachine.csproj": {}
+    "C:\\Users\\Randell Naidoo\\source\\repos\\Vending_Machine\\Vending-Machine\\vm_API_service\\VendingMachine\\VendingMachine.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Randell Naidoo\\source\\repos\\VendingMachine\\VendingMachine\\VendingMachine.csproj": {
+    "C:\\Users\\Randell Naidoo\\source\\repos\\Vending_Machine\\Vending-Machine\\vm_API_service\\VendingMachine\\VendingMachine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Randell Naidoo\\source\\repos\\VendingMachine\\VendingMachine\\VendingMachine.csproj",
+        "projectUniqueName": "C:\\Users\\Randell Naidoo\\source\\repos\\Vending_Machine\\Vending-Machine\\vm_API_service\\VendingMachine\\VendingMachine.csproj",
         "projectName": "VendingMachine",
-        "projectPath": "C:\\Users\\Randell Naidoo\\source\\repos\\VendingMachine\\VendingMachine\\VendingMachine.csproj",
+        "projectPath": "C:\\Users\\Randell Naidoo\\source\\repos\\Vending_Machine\\Vending-Machine\\vm_API_service\\VendingMachine\\VendingMachine.csproj",
         "packagesPath": "C:\\Users\\Randell Naidoo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Randell Naidoo\\source\\repos\\VendingMachine\\VendingMachine\\obj\\",
+        "outputPath": "C:\\Users\\Randell Naidoo\\source\\repos\\Vending_Machine\\Vending-Machine\\vm_API_service\\VendingMachine\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

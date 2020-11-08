@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "a5G+ItbdzABFNy+bWmacMzlQtlrgg0UjLE/hrKuG1Zmlrn7BVYj6cYzZ3splNzyOaBM7OGsUy31SZhpkC7WmgQ==",
+  "dgSpecHash": "WZK+zRbkZRDO2r6r8WhLIyphZ0DAG3PLqdkI8hBnBTYdyi3+r9g4/H6OsI+bw/8VSut+2hQwWCt8gBL5TJJq7w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Randell Naidoo\\source\\repos\\VendingMachine\\VendingMachine\\VendingMachine.csproj",
+  "projectFilePath": "C:\\Users\\Randell Naidoo\\source\\repos\\Vending_Machine\\Vending-Machine\\vm_API_service\\VendingMachine\\VendingMachine.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

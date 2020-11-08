@@ -9,45 +9,25 @@ namespace VendingMachine.Services
     public class CoinService
     {
         private static List<Coins> coins = new List<Coins>();
-     
+        private static readonly string[] coinName = new string[] { "R1", "R2", "R5", "R10"};
+        private static readonly int[] coinAmount = new int[] { 10, 2, 3, 9,  };
+        private static readonly int[] coinValue = new int[] { 1, 2, 5, 10};
 
-      
+
         static CoinService()
         {
-            Coins coin1 = new Coins
+            Random rnd = new Random();
+
+            for(int i = 0; i < 4; i++)
             {
-                value = 1,
-                name = "R1",
-                amount = 3
-                
-            };
-
-            Coins coin2 = new Coins
-            {
-                value = 2,
-                name = "R2",
-                amount = 7
-            };
-
-            Coins coin3 = new Coins
-            {
-                value = 5,
-                name = "R5",
-                amount = 3
-            };
-
-            Coins coin4 = new Coins
-            {
-                value = 10,
-                name = "R10",
-                amount = 5
-            };
-
-            coins.Add(coin1);
-            coins.Add(coin2);
-            coins.Add(coin3);
-            coins.Add(coin4);
-
+                Coins coin = new Coins
+                {
+                    name = coinName[i],
+                    value = coinValue[i],
+                    amount = (rnd.Next(3,10))
+                };
+                coins.Add(coin);
+            }
 
 
         }
