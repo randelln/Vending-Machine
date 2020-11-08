@@ -64,10 +64,10 @@ const HomeContainer = () => {
             functions={{
                 loadData,
                 fetchCoins: () => {
-                    fetchData(true, `${API_BASE_URL}/coins`, setCoins, setReLoadingCoins, setLoadingCoins);
+                    fetchData(false, `${API_BASE_URL}/coins`, setCoins, setReLoadingCoins, setLoadingCoins);
                 },
                 fetchProducts: () => {
-                    fetchData(true, `${API_BASE_URL}/products`, setProducts, setReLoadingProducts, setLoadingProducts);
+                    fetchData(false, `${API_BASE_URL}/products`, setProducts, setReLoadingProducts, setLoadingProducts);
                 },
                 addCoins: coinValue => {
                     addCoins(coinValue, setRunningTotal, coins, runningTotal, setCoins);
