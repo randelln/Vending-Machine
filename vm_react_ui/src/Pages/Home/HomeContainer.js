@@ -12,8 +12,8 @@ export const fetchData = (init, url, setStateData, setDataReloading, setDataLoad
     fetch(url)
         .then(res => res.json())
         .then(response => {
-            init === true ? setDataReloading(false) : setDataLoading(false);
-            setStateData(response);
+            setTimeout(function(){init === true ? setDataReloading(false) : setDataLoading(false);
+                setStateData(response)},3000)      
         })
         .catch(err => {
             window.alert(`An error has occurred ${err}`);
