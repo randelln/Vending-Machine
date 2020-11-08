@@ -7,6 +7,6 @@ React SPA that consumes a ASP.net Core Web API Service
 
 # Screenshots
 
-![alt text](screenshots/OpenApp.png "Home Page")
+![alt text](screenshots/AppOpen.png "Home Page")
 
 - 
