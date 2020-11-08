@@ -69,7 +69,7 @@ React SPA that consumes an ASP.net Core Web API Service
 
 ### React Unit Tests
 
-- The Unit Tests for the React App is denoted by '__Tests__' in each directory that is relevant to the test itself. 
+- The Unit Tests for the React App is denoted by "__Tests__" in each directory that is relevant to the test itself. 
 
 ![alt text](screenshots/ReactUTStruct.png "Run Test")
 
@@ -77,7 +77,7 @@ React SPA that consumes an ASP.net Core Web API Service
 
 ![alt text](screenshots/NpmTest.png "Run Test")
 
-- The Unit Tests will run and be presented to you in the terminal. 
+- The Unit Tests will run and results will be presented to you in the terminal. 
 
 ![alt text](screenshots/NpmTestResult.png "Run Test")
 
