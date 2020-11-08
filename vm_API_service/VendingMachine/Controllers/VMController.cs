@@ -21,18 +21,11 @@ namespace VendingMachine.Controllers
         private readonly CoinService coinService;
         private readonly ProductService productService;
 
-
-
-      //  private readonly ILogger<VMController> _logger;
-
         public VMController( CoinService coinService, ProductService productService)
         {
-        //    _logger = logger;
             this.coinService = coinService;
             this.productService = productService;
         }
-
-
 
        
         [HttpGet("coins")]
@@ -50,10 +43,8 @@ namespace VendingMachine.Controllers
         [HttpGet("buy/{id}/{balance}")]
         public async Task<BuyResult> Put(int id, int balance)
         {
-           
             Product product = productService.GetById(id);
            
-
             if (balance == 0)
             {
                 BuyResult errBalBuyResult = new BuyResult
@@ -64,8 +55,6 @@ namespace VendingMachine.Controllers
                 };
                 return errBalBuyResult;
             }
-
-            
 
             if(product == null)
             {
@@ -78,29 +67,17 @@ namespace VendingMachine.Controllers
                 return errProdBuyResult;
             }
 
-
             int remainBalance = balance - product.Price ;
-            int remainProducts = product.Quantity - 1;
 
             BuyResult successBuyResult = new BuyResult
             {
                 Balance = remainBalance,
                 Error = false,
-                ErrorMessage = null,
-                
-                
+                ErrorMessage = null,            
             };
             productService.Update(id);
-         //   Product refreshedProd = productService.GetById(id);
             return successBuyResult;
-          
         }
-        //public async Task<IActionResult> Put(int id, [FromBody] Product product)
-        //{
-        //    productService.Update(id, product);
-
-        //    return NoContent();
-        //}
 
     }
 }

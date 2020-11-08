@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using VendingMachine.Models;
 
 namespace VendingMachine.Services
@@ -10,13 +8,10 @@ namespace VendingMachine.Services
     {
         private static List<Product> products = new List<Product>();
         private static int Count = 1;
-
         private static readonly string[] productName = new string[] { "Coke", "Fanta", "Sprite", "Lemon Twist", "Tab", "Pepsi", "Mountain Dew", "Lays", "Simba", "Energade" };
         private static readonly int[] productQuant = new int[] { 10, 2, 3, 9, 5, 8, 7, 12, 9, 11 };
         private static readonly int[] productPrice = new int[] { 10, 10, 10, 10, 10, 10, 8, 5, 5, 10 };
         private static readonly string[] productVolume = new string[] { "330ml", "330ml", "330ml", "500ml", "330ml", "500ml", "330ml", "33g", "33g", "500ml" };
-
-       // private static readonly Array[] arrays = new Array[] { productName, productQuant };
 
         static ProductService()
         {
@@ -29,12 +24,9 @@ namespace VendingMachine.Services
                     Quantity = productQuant[i],
                     Price = productPrice[i],
                     Volume = productVolume[i]
-                    
                 };
                 products.Add(product);
             }
-
-            
         }
 
         public List<Product> GetAll()

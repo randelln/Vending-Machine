@@ -12,12 +12,9 @@ namespace VendingMachine.Services
         private static readonly string[] coinName = new string[] { "R1", "R2", "R5", "R10"};
         private static readonly int[] coinAmount = new int[] { 10, 2, 3, 9,  };
         private static readonly int[] coinValue = new int[] { 1, 2, 5, 10};
-
-
         static CoinService()
         {
             Random rnd = new Random();
-
             for(int i = 0; i < 4; i++)
             {
                 Coins coin = new Coins
