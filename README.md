@@ -31,7 +31,7 @@ React SPA that consumes an ASP.net Core Web API Service
 
 ![alt text](screenshots/NpmStart.png "Home Page")
 
-# Screenshots
+# Using The WebApp
 - When the WebApp opens, and the Service is up and running, you will see this home page.
 
 ![alt text](screenshots/AppOpen.png "Home Page")
@@ -47,3 +47,8 @@ React SPA that consumes an ASP.net Core Web API Service
 - You will notice that after a successful purchase, the product quantity of the item bought, decreases. 
 
 ![alt text](screenshots/AppAfterBuy.png "Use Coins")
+
+
+# Unit Tests
+
+### Web API Unit Tests
