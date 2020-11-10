@@ -31,6 +31,8 @@ React SPA that consumes an ASP.net Core Web API Service
 
 ![alt text](screenshots/NpmStart.png "Home Page")
 
+- The Web App will open up in the browser and connect to the API, and you may start using it as seen below. 
+
 # Using The WebApp
 - When the WebApp opens, and the Service is up and running, you will see this home page.
 
@@ -52,3 +54,31 @@ React SPA that consumes an ASP.net Core Web API Service
 # Unit Tests
 
 ### Web API Unit Tests
+
+- You will notice within the Visual Studio Application that you have opened, there will be two projects, the one being the API, and the other being used for the API Unit Tests.
+
+![alt text](screenshots/UTProject.png "Unit test")
+
+- To run the Unit Tests, click on the "Test" tab at the top, and select "Run All Tests".
+
+![alt text](screenshots/runUnitTestVS.png "Run Test")
+
+- The Visual Studio Code Test Explorer will open up and run your tests.
+
+![alt text](screenshots/TestExplorer.png "Run Test")
+
+### React Unit Tests
+
+- The Unit Tests for the React App is denoted by "__Tests__" in each directory that is relevant to the test itself. 
+
+![alt text](screenshots/ReactUTStruct.png "Run Test")
+
+- In order to run the React Unit Tests, you will need to run it from the terminal opened up in the React root directory and run the command "npm test". 
+
+![alt text](screenshots/NpmTest.png "Run Test")
+
+- The Unit Tests will run and results will be presented to you in the terminal. 
+
+![alt text](screenshots/NpmTestResult.png "Run Test")
+
+
