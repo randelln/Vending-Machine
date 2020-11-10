@@ -21,25 +21,26 @@ namespace VendingMachine.Controllers
         private readonly CoinService coinService;
         private readonly ProductService productService;
 
+        //Controller constructor
         public VMController( CoinService coinService, ProductService productService)
         {
             this.coinService = coinService;
             this.productService = productService;
         }
 
-       
+       // HTTP GET Request to get all coins
         [HttpGet("coins")]
         public IEnumerable<Coins> GetCoins()
         {
             return coinService.GetAll();
         }
-
+        // HTTP GET Request to get all coins
         [HttpGet("products")]
         public IEnumerable<Product> GetProducts()
         {
             return productService.GetAll();
         }
-
+        // HTTP GET Request to purchase a product
         [HttpGet("buy/{id}/{balance}")]
         public async Task<BuyResult> Put(int id, int balance)
         {

@@ -21,7 +21,7 @@ export const checkout = (product, runningTotal, setLoadingBuy, setRunningTotal, 
             .then(response => {
                 setLoadingBuy(false);
                 if (!response.error) {
-                    window.alert(`Purchase of ${product.name} successful, coins refunded is ${response.balance}`);
+                    window.alert(`Purchase of ${product.name} successful, coins refunded is R${response.balance}`);
                     setRunningTotal(0);
                     fetchProducts();
                     fetchCoins();

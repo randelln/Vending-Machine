@@ -5,7 +5,7 @@ import { API_BASE_URL } from '../../constants';
 //Makes API request, init - To know when the request is made the first time.
 
 // setStateData - Will set the data that comes back from the API, sets the response to the state
-//setDataReloading - Reloading the entire application
+// setDataReloading - Reloading the entire application
 // setDataLoading -  Changes variable that is DataLoading
 export const fetchData = (init, url, setStateData, setDataReloading, setDataLoading) => {
     init === true ? setDataReloading(true) : setDataLoading(true);
@@ -13,7 +13,7 @@ export const fetchData = (init, url, setStateData, setDataReloading, setDataLoad
         .then(res => res.json())
         .then(response => {
             setTimeout(function() {init === true ? setDataReloading(false) : setDataLoading(false);
-                setStateData(response)},3000)      
+                setStateData(response)},2000)      
         })
         .catch(err => {
             window.alert(`An error has occurred ${err}`);

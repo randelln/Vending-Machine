@@ -8,10 +8,13 @@ namespace VendingMachine.Services
 {
     public class CoinService
     {
+        //Data structures used to pass on the data
         private static List<Coins> coins = new List<Coins>();
         private static readonly string[] coinName = new string[] { "R1", "R2", "R5", "R10"};
         private static readonly int[] coinAmount = new int[] { 10, 2, 3, 9,  };
         private static readonly int[] coinValue = new int[] { 1, 2, 5, 10};
+
+        //Giving each coin a name, value, and amount that can be used
         static CoinService()
         {
             Random rnd = new Random();
@@ -26,7 +29,7 @@ namespace VendingMachine.Services
                 coins.Add(coin);
             }
         }
-
+        //Returning a list of all coins
         public List<Coins> GetAll()
         {
             return coins;

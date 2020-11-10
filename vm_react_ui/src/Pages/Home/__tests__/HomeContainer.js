@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import HomeContainer, { fetchData, addCoins } from "../HomeContainer";
+// I have jest and enzyme for my unit tests
 // describe statement - Describes what is being tested
 describe('HomeContainer', () => {
     const homeContainer = shallow(<HomeContainer />).dive();

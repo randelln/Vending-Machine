@@ -10,7 +10,7 @@ namespace VMTest
     public class CoinServiceTest
     {   
         [TestMethod]
-        public void GetAllProducts_ShouldReturnAllCoins()
+        public void GetAllCoins_ShouldReturnAllCoins()
         {
             var coinService = new CoinService();
             var result = coinService.GetAll() as List<Coins>;

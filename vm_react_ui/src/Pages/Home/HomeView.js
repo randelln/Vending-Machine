@@ -67,7 +67,7 @@ const HomeView = ({ functions, state }) => {
             <tbody>
             <tr>
                 <Button id="ReloadProductsButton" className="btn-padding-right" color="success" onClick={fetchProducts}>
-                    Reload products
+                    Refresh products
                 </Button>
 
                 <Button id="ReloadCoinsButton" className="btn-padding-right" color="success" onClick={() => {
