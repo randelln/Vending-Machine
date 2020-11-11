@@ -3,7 +3,7 @@ import { Table, Button } from 'reactstrap';
 import { API_BASE_URL } from '../../constants';
 import './DataTableStyles.css';
 
-//Same as home container
+//Checkout function that performs buy operations
 export const checkout = (product, runningTotal, setLoadingBuy, setRunningTotal, fetchProducts, fetchCoins) => {
     if (product.price > runningTotal) {
         window.alert('Not enough funds');
