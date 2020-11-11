@@ -4,7 +4,7 @@ import { API_BASE_URL } from '../../constants';
 
 
 /**
- * Fetch data is function that accepts a url, makes an endpoint request, sets the response to state, adn updates the loading varaibles
+ * Fetch data is function that accepts a url, makes an endpoint request, sets the response to state, and updates the loading varaibles
  * @param {boolean} init 
  * @param {string} url 
  * @param {Function} setStateData 
