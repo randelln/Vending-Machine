@@ -7,9 +7,9 @@ import { API_BASE_URL } from '../../constants';
  * Fetch data is function that accepts a url, makes an endpoint request, sets the response to state, adn updates the loading varaibles
  * @param {boolean} init 
  * @param {string} url 
- * @param {boolean} setStateData 
- * @param {boolean} setDataReloading 
- * @param {boolean} setDataLoading 
+ * @param {Function} setStateData 
+ * @param {Function} setDataReloading 
+ * @param {Function} setDataLoading 
  */
 export const fetchData = (init, url, setStateData, setDataReloading, setDataLoading) => {
     init === true ? setDataReloading(true) : setDataLoading(true);
