@@ -79,6 +79,6 @@ React SPA that consumes an ASP.net Core Web API Service
 
 - The Unit Tests will run and results will be presented to you in the terminal. 
 
-![alt text](screenshots/NpmTestResult.png "Run Test")
+![alt text](screenshots/npmTestResult2.png "Run Test")
 
 
