@@ -5,10 +5,6 @@ import './HomeStyles.css';
 
 const HomeView = ({ functions, state }) => {
   //Destructuring
- // const object = {name:'Randell' , value:3}
-  //const name = object.name
-  //const {name} = object
-  // 
     const { loadData, fetchCoins, fetchProducts, addCoins } = functions;
     const {
         products,

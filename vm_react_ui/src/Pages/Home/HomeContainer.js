@@ -3,10 +3,7 @@ import HomeView from './HomeView';
 import { API_BASE_URL } from '../../constants';
 
 //Makes API request, init - To know when the request is made the first time.
-
 // setStateData - Will set the data that comes back from the API, sets the response to the state
-// setDataReloading - Reloading the entire application
-// setDataLoading -  Changes variable that is DataLoading
 export const fetchData = (init, url, setStateData, setDataReloading, setDataLoading) => {
     init === true ? setDataReloading(true) : setDataLoading(true);
     fetch(url)
@@ -37,7 +34,6 @@ export const addCoins = (coinValue, setRunningTotal, coins, runningTotal, setCoi
     setCoins(updatedCoins);
 };
 // Home Component - Creating state variables for rerendering
-// States variables - Has the variable and the function to set the value. When function is called page will rerender
 const HomeContainer = () => {
     const [products, setProducts] = useState([]);
     const [coins, setCoins] = useState([]);
