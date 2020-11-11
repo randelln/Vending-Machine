@@ -18,7 +18,6 @@ export const fetchData = (init, url, setStateData, setDataReloading, setDataLoad
 };
 
 // Updates the running total and decreases amount of coins available
-// .map - For all coins inside the array, if this coin value equals my coin, decrease the coin amount
 export const addCoins = (coinValue, setRunningTotal, coins, runningTotal, setCoins) => {
     setRunningTotal(runningTotal + coinValue);
     const updatedCoins = coins.map(coin =>
