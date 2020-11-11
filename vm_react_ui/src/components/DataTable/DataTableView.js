@@ -3,7 +3,16 @@ import { Table, Button } from 'reactstrap';
 import { API_BASE_URL } from '../../constants';
 import './DataTableStyles.css';
 
-//Checkout function that performs buy operations
+
+/**
+ * checkout is a function that makes an API call and performs the buy operation
+ * @param {Object} product 
+ * @param {int} runningTotal 
+ * @param {Function} setLoadingBuy 
+ * @param {Function} setRunningTotal 
+ * @param {Function} fetchProducts 
+ * @param {Function} fetchCoins 
+ */
 export const checkout = (product, runningTotal, setLoadingBuy, setRunningTotal, fetchProducts, fetchCoins) => {
     if (product.price > runningTotal) {
         window.alert('Not enough funds');
@@ -35,7 +44,7 @@ export const checkout = (product, runningTotal, setLoadingBuy, setRunningTotal, 
             });
     }
 };
-// function that accepts these props
+
 const DataTable = ({
                        products,
                        runningTotal,
@@ -45,7 +54,7 @@ const DataTable = ({
                        fetchProducts,
                        fetchCoins
                    }) => {
-    const items = products || []; // If products is undefined, pass empty array
+    const items = products || [];
     return (
         <Table striped>
             <thead className="thead-dark">

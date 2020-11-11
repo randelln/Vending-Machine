@@ -102,7 +102,7 @@ exports[`HomeContainer should render the HomeContainer without issues 1`] = `
         onClick={[Function]}
         tag="button"
       >
-        Reload products
+        Refresh products
       </Button>
       <Button
         className="btn-padding-right"

@@ -233,7 +233,7 @@ exports[`HomeView should render the HomeView without issues 1`] = `
         onClick={[MockFunction]}
         tag="button"
       >
-        Reload products
+        Refresh products
       </Button>
       <Button
         className="btn-padding-right"

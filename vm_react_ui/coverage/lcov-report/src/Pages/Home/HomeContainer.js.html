@@ -149,7 +149,17 @@
 <a name='L90'></a><a href='#L90'>90</a>
 <a name='L91'></a><a href='#L91'>91</a>
 <a name='L92'></a><a href='#L92'>92</a>
-<a name='L93'></a><a href='#L93'>93</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L93'></a><a href='#L93'>93</a>
+<a name='L94'></a><a href='#L94'>94</a>
+<a name='L95'></a><a href='#L95'>95</a>
+<a name='L96'></a><a href='#L96'>96</a>
+<a name='L97'></a><a href='#L97'>97</a>
+<a name='L98'></a><a href='#L98'>98</a>
+<a name='L99'></a><a href='#L99'>99</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -168,6 +178,12 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -184,10 +200,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -207,7 +220,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
@@ -245,26 +257,36 @@
 import HomeView from './HomeView';
 import { API_BASE_URL } from '../../constants';
 &nbsp;
-//Makes API request, init - To know when the request is made the first time.
 &nbsp;
-// setStateData - Will set the data that comes back from the API, sets the response to the state
-// setDataReloading - Reloading the entire application
-// setDataLoading -  Changes variable that is DataLoading
+/**
+ * Fetch data is function that accepts a url, makes an endpoint request, sets the response to state, adn updates the loading varaibles
+ * @param {boolean} init 
+ * @param {string} url 
+ * @param {boolean} setStateData 
+ * @param {boolean} setDataReloading 
+ * @param {boolean} setDataLoading 
+ */
 export const fetchData = (init, url, setStateData, setDataReloading, setDataLoading) =&gt; {
     init === true ? setDataReloading(true) : setDataLoading(true);
     fetch(url)
         .then(res =&gt; res.json())
         .then(response =&gt; {
             setTimeout(<span class="fstat-no" title="function not covered" >fu</span>nction() {<span class="cstat-no" title="statement not covered" >init === true ? setDataReloading(false) : setDataLoading(false);</span>
-<span class="cstat-no" title="statement not covered" >                setStateData(response)}</span>,3000)      
+<span class="cstat-no" title="statement not covered" >                setStateData(response)}</span>,2000)      
         })
         .catch(<span class="fstat-no" title="function not covered" >er</span>r =&gt; {
 <span class="cstat-no" title="statement not covered" >            window.alert(`An error has occurred ${err}`);</span>
         });
 };
 &nbsp;
-// Updates the running total and decreases amount of coins available
-// .map - For all coins inside the array, if this coin value equals my coin, decrease the coin amount
+/**
+ * addCoins is a function that updates the running total and decreases amount of coins available for the selected coin
+ * @param {int} coinValue 
+ * @param {Function} setRunningTotal 
+ * @param {Array} coins 
+ * @param {int} runningTotal 
+ * @param {Function} setCoins 
+ */
 export const addCoins = (coinValue, setRunningTotal, coins, runningTotal, setCoins) =&gt; {
     setRunningTotal(runningTotal + coinValue);
     const updatedCoins = coins.map(coin =&gt;
@@ -276,11 +298,8 @@ export const addCoins = (coinValue, setRunningTotal, coins, runningTotal, setCoi
             }
             : coin
     );
-    //Gives back new array of coins after purchase
     setCoins(updatedCoins);
 };
-// Home Component - Creating state variables for rerendering
-// States variables - Has the variable and the function to set the value. When function is called page will rerender
 const HomeContainer = () =&gt; {
     const [products, setProducts] = useState([]);
     const [coins, setCoins] = useState([]);
@@ -290,7 +309,7 @@ const HomeContainer = () =&gt; {
     const [reLoadingCoins, setReLoadingCoins] = useState(false);
     const [loadingBuy, setLoadingBuy] = useState(false);
     const [runningTotal, setRunningTotal] = useState(0);
-// Needed both loading and reloading products for purpose of reloading sections of page
+&nbsp;
     const loadData = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
 <span class="cstat-no" title="statement not covered" >        fetchData(true, `${API_BASE_URL}/coins`, setCoins, setReLoadingCoins, setLoadingCoins);</span>
 <span class="cstat-no" title="statement not covered" >        fetchData(true, `${API_BASE_URL}/products`, setProducts, setReLoadingProducts, setLoadingProducts);</span>
@@ -300,8 +319,7 @@ const HomeContainer = () =&gt; {
     useEffect(<span class="fstat-no" title="function not covered" >()</span> =&gt; {
 <span class="cstat-no" title="statement not covered" >        loadData();</span>
     }, []);
-//Passing down all props and functions to HomeView
-// Homeview is a component, that accepts 2 props functions and state, which are objects
+&nbsp;
     return (
         &lt;HomeView
             functions={{
@@ -340,7 +358,7 @@ export default HomeContainer;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Tue Nov 10 2020 17:59:28 GMT+0200 (South Africa Standard Time)
+                at Wed Nov 11 2020 15:33:45 GMT+0200 (South Africa Standard Time)
             </div>
         </div>
         <script src="../../../prettify.js"></script>

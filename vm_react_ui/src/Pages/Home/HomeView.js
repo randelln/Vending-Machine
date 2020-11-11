@@ -4,7 +4,6 @@ import DataTable from '../../components/DataTable/DataTableView';
 import './HomeStyles.css';
 
 const HomeView = ({ functions, state }) => {
-  //Destructuring
     const { loadData, fetchCoins, fetchProducts, addCoins } = functions;
     const {
         products,
@@ -65,7 +64,7 @@ const HomeView = ({ functions, state }) => {
                 <Button id="ReloadProductsButton" className="btn-padding-right" color="success" onClick={fetchProducts}>
                     Refresh products
                 </Button>
-
+                
                 <Button id="ReloadCoinsButton" className="btn-padding-right" color="success" onClick={() => {
                     fetchCoins();
                     setRunningTotal(0)

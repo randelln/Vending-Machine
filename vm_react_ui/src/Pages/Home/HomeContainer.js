@@ -2,8 +2,15 @@ import React, { useEffect, useState } from 'react';
 import HomeView from './HomeView';
 import { API_BASE_URL } from '../../constants';
 
-//Makes API request, init - To know when the request is made the first time.
-// setStateData - Will set the data that comes back from the API, sets the response to the state
+
+/**
+ * Fetch data is function that accepts a url, makes an endpoint request, sets the response to state, adn updates the loading varaibles
+ * @param {boolean} init 
+ * @param {string} url 
+ * @param {boolean} setStateData 
+ * @param {boolean} setDataReloading 
+ * @param {boolean} setDataLoading 
+ */
 export const fetchData = (init, url, setStateData, setDataReloading, setDataLoading) => {
     init === true ? setDataReloading(true) : setDataLoading(true);
     fetch(url)
@@ -17,7 +24,14 @@ export const fetchData = (init, url, setStateData, setDataReloading, setDataLoad
         });
 };
 
-// Updates the running total and decreases amount of coins available
+/**
+ * addCoins is a function that updates the running total and decreases amount of coins available for the selected coin
+ * @param {int} coinValue 
+ * @param {Function} setRunningTotal 
+ * @param {Array} coins 
+ * @param {int} runningTotal 
+ * @param {Function} setCoins 
+ */
 export const addCoins = (coinValue, setRunningTotal, coins, runningTotal, setCoins) => {
     setRunningTotal(runningTotal + coinValue);
     const updatedCoins = coins.map(coin =>
@@ -29,10 +43,8 @@ export const addCoins = (coinValue, setRunningTotal, coins, runningTotal, setCoi
             }
             : coin
     );
-    //Gives back new array of coins after purchase
     setCoins(updatedCoins);
 };
-// Home Component - Creating state variables for rerendering
 const HomeContainer = () => {
     const [products, setProducts] = useState([]);
     const [coins, setCoins] = useState([]);
@@ -42,7 +54,7 @@ const HomeContainer = () => {
     const [reLoadingCoins, setReLoadingCoins] = useState(false);
     const [loadingBuy, setLoadingBuy] = useState(false);
     const [runningTotal, setRunningTotal] = useState(0);
-// Needed both loading and reloading products for purpose of reloading sections of page
+
     const loadData = () => {
         fetchData(true, `${API_BASE_URL}/coins`, setCoins, setReLoadingCoins, setLoadingCoins);
         fetchData(true, `${API_BASE_URL}/products`, setProducts, setReLoadingProducts, setLoadingProducts);
@@ -52,8 +64,7 @@ const HomeContainer = () => {
     useEffect(() => {
         loadData();
     }, []);
-//Passing down all props and functions to HomeView
-// Homeview is a component, that accepts 2 props functions and state, which are objects
+
     return (
         <HomeView
             functions={{
